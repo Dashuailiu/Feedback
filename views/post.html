@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Comment</title>
+    <link
+      rel="stylesheet"
+      href="/public/lib/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+
+  <body>
+    <div class="header container">
+      <div class="page-item">
+        <h1>
+          <a href="/">Homepage</a>
+          &nbsp;
+          <small>Post your comments</small>
+        </h1>
+      </div>
+    </div>
+    <div class="comments container">
+      <!--
+        * Form action: comment
+      -->
+      <form action="/comment" method="get">
+        <div class="form-group">
+          <label for="input_name">Your name</label>
+          <input
+            type="text"
+            class="form-control"
+            required
+            minlength="2"
+            maxlength="10"
+            id="input_name"
+            name="name"
+            placeholder="Please input your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="textarea_message">Content</label>
+          <textarea
+            class="form-control"
+            name="message"
+            id="textarea_message"
+            cols="30"
+            rows="10"
+            required
+            minlength="5"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Post</button>
+      </form>
+    </div>
+  </body>
+</html>

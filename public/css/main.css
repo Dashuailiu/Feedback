@@ -1,0 +1,6 @@
+div.page-header {
+  position: relative;
+  display: block;
+  padding: 0rem 0rem 0.75rem 0rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}

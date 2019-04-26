@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guestbook</title>
+    <!-- 
+      * In the process of parsing DOM, when matching the tags as follows:
+      * * link
+      * * script
+      * * img
+      * * iframe
+      * * video
+      * * audio
+    * Browser will ask for a new XML Http Request
+    -->
+    <!-- 
+      * Relative path
+    -->
+    <link
+      rel="stylesheet"
+      href="/public/lib/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="/public/css/main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Comments Demo <small>for Node.js</small></h1>
+        <a class="btn btn-success" href="/post">Post Comments</a>
+      </div>
+    </div>
+    <div class="comments container">
+      <ul class="list-group">
+        {{each comments}}
+        <li class="list-group-item">
+          {{ $value.name }} said：{{ $value.message }}
+          <span class="float-right">{{ $value.dateTime }}</span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </body>
+</html>
