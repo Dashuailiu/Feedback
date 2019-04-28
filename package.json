@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dashuailiu/comment-nodejs.git"
+    "url": "git+https://github.com/Dashuailiu/Feedback.git"
   },
-  "author": "",
+  "author": "Lex Liu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dashuailiu/comment-nodejs/issues"
+    "url": "https://github.com/Dashuailiu/Feedback/issues"
   },
-  "homepage": "https://github.com/Dashuailiu/comment-nodejs#readme",
+  "homepage": "https://github.com/Dashuailiu/Feedback#readme",
   "dependencies": {
     "art-template": "^4.13.2",
     "bootstrap": "^4.3.1",
